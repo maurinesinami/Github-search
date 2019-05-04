@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { User } from '../user-class/user';
+import { Repository } from '../repo-class/repository';
+import { GithubSearchService } from '../github-http/github-request.service';
 
 @Component({
   selector: 'app-home',

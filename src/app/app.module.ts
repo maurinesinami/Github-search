@@ -4,7 +4,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { GithubRequestService } from './github-http/github-request.service';
+import { GithubSearchService } from './github-http/github-request.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +16,7 @@ import { GithubRequestService } from './github-http/github-request.service';
     HttpClientModule,
     AppRoutingModule
   ],
-  providers: [GithubRequestService],
+  providers: [GithubSearchService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
