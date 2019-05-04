@@ -1,0 +1,67 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+
+    </div>
+
+
+    <div class="col-md-4">
+      <form>
+       <input type="text"name="username"placeholder="search username"id="search"  ><br><br>
+        <button id ="reset" class="btn btn-dark btn-lg" type="reset" name="button">Reset Search Value</button>
+        <br><br><br><br>
+      </form>
+    </div>
+
+
+    <div class="col-md-4">
+
+    </div>
+  </div>
+</div>
+<hr><hr>
+
+<div class="container-fluid">
+  <div  appBackground class="results">
+    <div class="row" >
+        <div class="col-sm-4" id="u-avatar">
+         <!-- <h1 id="title">Search results</h1> -->
+         <img src={{reponame.avatar}} class="img-fluid rounded-circle" alt="prof"><br><br>
+        </div>
+
+        <div class="col-sm-4" id="u-info">
+          <div class="card">
+            <div class="card-title">
+                <h1>User Info</h1>
+            </div>
+            <div class="card-body">
+
+              <span class="btn btn-warning"> Username : <b>{{user.username}}</b></span><br><br>
+              <span class="btn btn-info">{{reponame.followers}} followers</span><br><br>
+              <span class="btn btn-info">{{reponame.following}} following</span><br><br>
+              <span class="btn btn-info">{{reponame.reponame}} public repositories</span><br><br>
+              <p><a href="{{reponame.html_url}}" class="btn btn-success" target="_blank">View Github Profile</a></p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-sm-4" id="u-repos">
+           <div class="card">
+             <div class="card-title">
+               <h1>View Repositories Below</h1>
+             </div>
+             <div class="card-body">
+               <div  *ngFor= "let repo of reponame.repos| slice:0:10">
+                <p *ngIf="repo.language" class="list-group-item"><a  class="btn btn-dark" href = {{repo.html_url}} target="_blank" id="repos">{{repo.name}}</a> : {{repo.language}}</p>
+               </div>
+             </div>
+
+
+           </div>
+        </div>
+    </div>
+  </div>
+
+
+          <!-- <img src={{reponame.avatar}} alt=""> -->     

@@ -6,6 +6,7 @@ import { GithubSearchService } from '../github-http/github-request.service';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
+  providers : [GithubSearchService],
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
