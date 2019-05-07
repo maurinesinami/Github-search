@@ -1,19 +1,37 @@
 import { Component, OnInit } from '@angular/core';
+// import { HttpClient } from '@angular/common/http';
 import { User } from '../user-class/user';
 import { Repository } from '../repo-class/repository';
-import { GithubSearchService } from '../github-http/github-request.service';
+import { GithubRequestService } from '../github-http/github-request.service';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  providers : [GithubSearchService],
+  providers : [GithubRequestService],
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+user: User;
+reponame: Repository;
+repos:any[]
+username: string;
+
+  constructor(private githubService: GithubRequestService, private repoRequest: GithubRequestService) {
+    this.githubService.apiRequest()
+    this.githubService.repoRequest()
+    this.user = this.githubService.user
+    this.reponame = this.githubService.reponame
+    this.repos= this.githubService.reponame.repos
+  } //private http: HttpClient
+
+   findProfile(){
+     this.githubService.updateProfile(this.username);
+   }
 
   ngOnInit() {
+
+
   }
 
 }

@@ -1,0 +1,36 @@
+#search {
+    font-size: xx-large;
+    border-radius: 20px;
+  
+  }
+  #btn {
+  font-size: xx-large;
+  }
+  
+  .results {
+  
+   color: black;
+  }
+  #title {
+    text-align: center;
+  }
+  
+  #repos {
+    color: #ed5769;
+    text-decoration: none;
+  }
+  #reset {
+  display: flex;
+  justify-content: center
+  }
+  #reset:hover {
+    font-family: 'Abril Fatface', cursive;
+    font-size: x-large;
+  }
+  #main {
+  border : 2px solid black;
+  font-family: 'Courgette',cursive;
+  }
+  #u-info, #u-avatar, #u-repos{
+    padding-top: 10%;
+  }
