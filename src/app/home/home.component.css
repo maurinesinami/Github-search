@@ -28,9 +28,15 @@
     font-size: x-large;
   }
   #main {
-  border : 2px solid black;
+  border : 2px solid rgb(107, 84, 84);
   font-family: 'Courgette',cursive;
   }
   #u-info, #u-avatar, #u-repos{
     padding-top: 10%;
+  }
+  .container-fluid{
+    background-color: black;
+  }
+  .container{
+    background-color: black;
   }
