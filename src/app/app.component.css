@@ -1,6 +1,13 @@
 h1{
     text-align: center;
+    font-size: 60px;
 }
 .jumbotron{
     font-family: 'Akronim', cursive;
+}
+.card{
+    text-align: center;
+    font-family: 'Akronim', cursive;
+font-family: 'Acme', sans-serif;
+font-size: 30px;
 }
