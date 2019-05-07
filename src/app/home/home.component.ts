@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-// import { HttpClient } from '@angular/common/http';
+ import { HttpClient } from '@angular/common/http';
 import { User } from '../user-class/user';
 import { Repository } from '../repo-class/repository';
 import { GithubRequestService } from '../github-http/github-request.service';
@@ -17,7 +17,8 @@ reponame: Repository;
 repos:any[]
 username: string;
 
-  constructor(private githubService: GithubRequestService, private repoRequest: GithubRequestService) {
+  constructor(private githubService: GithubRequestService, private repoRequest: GithubRequestService,private http: HttpClient
+    ) {
     this.githubService.apiRequest()
     this.githubService.repoRequest()
     this.user = this.githubService.user
