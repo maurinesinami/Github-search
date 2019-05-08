@@ -1,7 +1,8 @@
-<input type="text" placeholder="Enter a username to get repositories" [(ngModel)]="usernameInput">
-<button type="button" (click)="getUserInfo()" >Submit</button>
+<div class="input">
+<input type="text" placeholder="Enter a username " [(ngModel)]="usernameInput"id="search"><br><br>
+<button type="button" class="btn btn-info"(click)="getUserInfo()" >Submit</button>
 
-
+</div>
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-6" id="u-avatar">
@@ -12,18 +13,20 @@
   
   
   
-      <div class="card">
+      
         
-            <h1>User Info</h1>
-        </div>
+          
+        
         <div class="row">
           <div class="col-md-6">
-        <div class="card-body">
-            <span class="btn btn-warning">Username: <b>{{otherUserInfo.username}} </b></span><br>
-              <span class="btn btn-info">Followers: {{otherUserInfo.followers}}</span><br>
-                <span class="btn btn-info">following:  {{otherUserInfo.following}}</span><br>
-  <p><a href="{{otherUserInfo.html_url}}" class="btn btn-success" target="_blank">View Github Profile</a></p>
-</div>
+        <ul class="list-group">
+            <li class="list-group-item">Username: <b>{{otherUserInfo.username}} </b></li>
+              <li class="list-group-item">Followers: {{otherUserInfo.followers}}</li>
+                <li class="list-group-item">following:  {{otherUserInfo.following}}</li>
+        
+                <li><a href="{{otherUserInfo.html_url}}" class="btn btn-success" target="_blank">View Github Profile</a></li>
+        </ul>
+              </div>
 </div>
 </div>
 

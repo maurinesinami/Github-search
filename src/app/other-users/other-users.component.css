@@ -1,3 +1,8 @@
-.container-fluid{
-    
-}
+#search {
+    font-size: xx-large;
+    border-radius: 20px;
+  
+  }
+  .input{
+      text-align: center;
+  }
