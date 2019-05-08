@@ -1,10 +1,29 @@
 <input type="text" placeholder="Enter a username to get repositories" [(ngModel)]="usernameInput">
 <button type="button" (click)="getUserInfo()" >Submit</button>
 
-<div>
-  <img src="{{otherUserInfo.avatar}}">
-  <p>Username: {{otherUserInfo.username}} </p>
-  <p>Followers: {{otherUserInfo.followers}}</p>
-  <p>following:  {{otherUserInfo.following}}</p>
-  <a href="{{otherUserInfo.html_url"></a>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6" id="u-avatar">
+          <img src="{{otherUserInfo.avatar}}"class="img-fluid rounded-circle">
+        </div>
+  
+  </div>
+  
+  
+  
+      <div class="card">
+        
+            <h1>User Info</h1>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+        <div class="card-body">
+            <span class="btn btn-warning">Username: <b>{{otherUserInfo.username}} </b></span><br>
+              <span class="btn btn-info">Followers: {{otherUserInfo.followers}}</span><br>
+                <span class="btn btn-info">following:  {{otherUserInfo.following}}</span><br>
+  <p><a href="{{otherUserInfo.html_url}}" class="btn btn-success" target="_blank">View Github Profile</a></p>
 </div>
+</div>
+</div>
+
