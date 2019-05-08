@@ -6,6 +6,10 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { HttpClientModule } from '@angular/common/http';
+import { OtherUsersComponent } from './other-users/other-users.component';
+import { OtherUsersRepoComponent } from './other-users-repo/other-users-repo.component';
+import { MyInfoComponent } from './my-info/my-info.component';
+import { MyReposComponent } from './my-repos/my-repos.component';
 
 
 
@@ -14,6 +18,10 @@ import { HttpClientModule } from '@angular/common/http';
   declarations: [
     AppComponent,
     HomeComponent,
+    OtherUsersComponent,
+    OtherUsersRepoComponent,
+    MyInfoComponent,
+    MyReposComponent,
     
   ],
   imports: [

@@ -1,0 +1,10 @@
+<input type="text" placeholder="Enter a username to get repositories" [(ngModel)]="usernameInput">
+<button type="button" (click)="getUserInfo()" >Submit</button>
+
+<div>
+  <img src="{{otherUserInfo.avatar}}">
+  <p>Username: {{otherUserInfo.username}} </p>
+  <p>Followers: {{otherUserInfo.followers}}</p>
+  <p>following:  {{otherUserInfo.following}}</p>
+  <a href="{{otherUserInfo.html_url"></a>
+</div>
