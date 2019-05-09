@@ -1,11 +1,11 @@
 # Githubsearch
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
-#### By **MITCH MUHU**
+#### By **MAURINE SINAMI**
 ## Description
 This in an app where on can serarch his or her github profile and all the details including the repositories and the time one joined.
 ## Setup/Installation Requirements
-* git clone https://github.com/mitchnm/QUOTES.git
-* cd QUOTES
+* git clone https://github.com/maurinesinami/Github-search.git
+* cd Github-search
 * Open with your favourite text editor
 ## Known Bugs
 There are no known bugs.
@@ -15,7 +15,7 @@ There are no known bugs.
 * Bootstrap 
 * Typescript
 ## Support and contact details
-if there are any issues,contact me through my email: "mitchndungu21@gmail.com"
+if there are any issues,contact me through my email: "maurine.sinami@gmail.com"
 
 ### BDD
 | Behavior        | Result |
