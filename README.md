@@ -2,8 +2,6 @@
 This in an app where on can search his or her github profile and all the details including the repositories. 
 by MAURINE SINAMI
 
-## Description
-This is an app that allows one to create quotes and submit them.It also enables one to see see the number of likes and dislikes (upvotes and downvotes) .  it also enables him / her to vote for a quote.
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
