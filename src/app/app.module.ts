@@ -10,6 +10,7 @@ import { OtherUsersComponent } from './other-users/other-users.component';
 import { OtherUsersRepoComponent } from './other-users-repo/other-users-repo.component';
 import { MyInfoComponent } from './my-info/my-info.component';
 import { MyReposComponent } from './my-repos/my-repos.component';
+import { HighlightDirective } from './highlight.directive';
 
 
 
@@ -22,6 +23,7 @@ import { MyReposComponent } from './my-repos/my-repos.component';
     OtherUsersRepoComponent,
     MyInfoComponent,
     MyReposComponent,
+    HighlightDirective,
     
   ],
   imports: [

@@ -77,7 +77,7 @@ export class GithubRequestService {
        
       this.http.get<ApiResponse>(environment.apiUrl +  usernameInput +environment.apiKey).toPromise().then(response=>{
          this.user.username = response.login
-         console.log("Api url",environment.otherUserApi1Url +  usernameInput +environment.otherUserApi2Url)
+         
         //  this.reponame.reponame = response.public_repos
          this.user.avatar = response.avatar_url
          this.user.html_url = response.html_url
@@ -102,20 +102,22 @@ export class GithubRequestService {
      return promise
    }
 
+
 //    repoRequest(k) {
 //      interface Response{
-//        // html_url: string;
-//        // description : string;
-//        // language : string;
+       
+//         html_url: string;
+//         description : string;
+//         language : string;
 //      }
 //      var usernameInputRepo = k
 //      let promise = new Promise ((resolve,reject)=>{
-//        this.http.get<Response>(environment.apiUrl +  usernameInputRepo +environment.apiKey ).toPromise().then(response=>{
+//        this.http.get<Response>(environment.apiUrl+usernameInputRepo+environment.otherApiRepoUrl).toPromise().then(response=>{
 //          this.reponame.repos = response
 //          console.log(response)
 
 //          resolve()
-// console.log("maurine")
+
 //        }, error =>{
 //         this.reponame.repos = []
 

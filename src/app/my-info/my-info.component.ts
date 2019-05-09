@@ -13,6 +13,6 @@ export class MyInfoComponent implements OnInit {
   ngOnInit() {
     this.http.myUserInfo()
     this.myInfo = this.http.user
+    
   }
-
 }
