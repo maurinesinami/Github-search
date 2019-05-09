@@ -1,4 +1,4 @@
-# Quotes
+# Github-search
 This in an app where on can search his or her github profile and all the details including the repositories. 
 by MAURINE SINAMI
 
