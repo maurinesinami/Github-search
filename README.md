@@ -2,7 +2,7 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
 #### By **MAURINE SINAMI**
 ## Description
-This in an app where on can serarch his or her github profile and all the details including the repositories and the time one joined.
+This in an app where on can search his or her github profile and all the details including the repositories.
 ## Setup/Installation Requirements
 * git clone https://github.com/maurinesinami/Github-search.git
 * cd Github-search
